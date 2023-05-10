@@ -1,0 +1,21 @@
+@media only screen and (max-width: 800px) {
+    .image-proex-navbar{
+        display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .image-proex-navbar{
+        display: none;
+        width: 8000px;
+        
+}
+
+#parallax-uesc-entrada{
+    height: 500px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

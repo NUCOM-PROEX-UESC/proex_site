@@ -1,0 +1,59 @@
+.angle-right{
+	margin-top:-3px;
+	width: 15px; 
+	height: 15px
+}
+.home{
+	width: 25px; 
+	height: 25px;
+}
+
+.agirimage{
+	width: 100%; 
+	margin-top: 80px;
+	margin-bottom: 20px;
+}
+
+.certimage{
+	width: 100%;
+}
+
+.download-ic{
+	width: 20px; 
+	height: 20px;
+	margin-bottom: 5px;
+}
+
+.header-icons{
+	width: 30px; 
+	height: 30px;
+	margin-bottom: 5px;
+}
+
+.exclamation-warning{
+	margin-top:-3px;
+	width: 40px; 
+	height: 40px
+}
+
+.exclamation-warning-form{
+	margin-top:-3px;
+	width: 25px; 
+	height: 25px
+}
+
+.bg-custom-warning{
+	background-color: #fdd835 !important;
+}
+
+.bg-custom-inform{
+	background-color: #303f9f !important;
+	
+}
+
+.bg-custom-warning-form{
+	background-color: #2E7D32 !important;
+}
+.bx-shadow{
+	box-shadow: 1px 1px 1px grey;
+}
