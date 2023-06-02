@@ -186,14 +186,9 @@ section .section-title {
     border-radius: 50%;
 }
 
-
-/* Alterções Dan*/
-
-
 .color-sub-and-title{
     color: #2259a6 !important;
 }
-
 
 .img-nav{
     width: 5% !important; 
@@ -213,8 +208,9 @@ section .section-title {
     margin-right:20px;
 }
 
-.navbar-brand:hover{
-    font-size: 17px;
+a.navbar-brand:hover{
+    background-color: rgb(80, 117, 167);
+    border-radius: 5px
 }
 
 .carousel--text{
