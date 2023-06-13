@@ -7,65 +7,63 @@
 /* MODIFICAÇÕES MESCLADAS POR PATRICK FERRAZ */
 
 .bread {
-	padding-left: 5%;
+    padding-left: 5%;
 }
 
 .backdrop {
-	background-color: #1a237e;
+    background-color: #1a237e;
 }
 
 .justified {
-	text-align: justify;
+    text-align: justify;
 }
 
 .sec {
-	padding-left: 5%;
-	padding-right: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.bottom-align
-{
-	vertical-align: bottom;
+.bottom-align {
+    vertical-align: bottom;
 }
 
-#google-map
-{
-	line-height: 222px;
+#google-map {
+    line-height: 222px;
 }
 
-.opacity4
-{
-	opacity: 0.4;
+.opacity4 {
+    opacity: 0.4;
 }
 
 div#tipDiv {
-	font-size: 11px;
-	color: #000;
-	background-color: white;
-	border: 1px solid #667295;
-	padding: 4px;
-	width: 200px;
+    font-size: 11px;
+    color: #000;
+    background-color: white;
+    border: 1px solid #667295;
+    padding: 4px;
+    width: 200px;
 }
 
 /* for optional caption */
 div#tipDiv div.caption {
-	font-size: 12px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6px;
 }
-/* divs with classes img and txt in all image-text formatting functions */
+
 div#tipDiv td div.txt {
-	text-align: justify;
-	padding-right: 4px;
+    text-align: justify;
+    padding-right: 4px;
 }
 
-.margin-top
-{
-	margin-top: 10px;
+.margin-top {
+    margin-top: 10px;
 }
 
-/* FontAwesome for working BootSnippet :> */
+.editMt-5{  
+    margin-top: 5rem;
+}
 
 
 
@@ -78,7 +76,7 @@ div#tipDiv td div.txt {
 }
 
 .btn-primary {
-  background-color: #2259a6; 
+    background-color: #2259a6;
 }
 
 
@@ -88,6 +86,7 @@ section .section-title {
     margin-bottom: 50px;
     text-transform: uppercase;
 }
+
 #team .card {
     border: none;
     background: #ffffff;
@@ -172,12 +171,12 @@ section .section-title {
 
 .backside .card a {
     font-size: 18px;
-    color: #007bff!important;
+    color: #007bff !important;
 }
 
 .frontside .card .card-title,
 .backside .card .card-title {
-    color:#007bff!important;
+    color: #007bff !important;
 }
 
 .frontside .card .card-body img {
@@ -186,124 +185,132 @@ section .section-title {
     border-radius: 50%;
 }
 
-.color-sub-and-title{
+.color-sub-and-title {
     color: #2259a6 !important;
 }
 
-.img-nav{
-    width: 5% !important; 
+.text-proex{
+    color:#2259a6;
+}
+
+.img-nav {
+    width: 5% !important;
     height: 1.6rem;
 }
 
-.cor-acoes{
+.cor-acoes {
     color: #007bff;
 }
 
-.gradient-nav-footer{
-  background-color: #2259a6; 
+.gradient-nav-footer {
+    background-color: #2259a6;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 15px;
-    margin-right:20px;
+    margin-right: 20px;
 }
 
-a.navbar-brand:hover{
-    background-color: rgb(80, 117, 167);
+a.navbar-brand:hover {
+    background-color: #286AC7;
     border-radius: 5px
 }
 
-.carousel--text{
+.carousel--text {
     color: white;
     font-family: Raleway;
     font-size: 25px;
-    background-color:#472b7a;
+    background-color: #472b7a;
     text-align: center
 }
 
 
-@media (min-width: 992px){
-   .edit{
-    width: 50% !important;
-}
-}
-@media (min-width: 768px){
-    .edit{
+@media (min-width: 992px) {
+    .edit {
         width: 50% !important;
     }
 }
-@media (min-width: 576px){
+
+@media (min-width: 768px) {
+    .edit {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 576px) {
     .edit {
         width: 50% !important;
     }
 }
 
 .btn-primary2 {
-  background-color: rgb(233, 30, 99); 
+    background-color: rgb(233, 30, 99);
 }
 
-.img-index{
+.img-index {
     width: 100%;
 }
 
 @media only screen and (max-width: 766px) {
-  .img-index{
-    width: 100%;
-    margin-top: 5%;
-}
+    .img-index {
+        width: 100%;
+        margin-top: 5%;
+    }
 }
 
-@media  screen and (min-width: 767px){
-  	.img-index{
-    	width: 100%;
-    	margin-top: 10%;
-	}
+@media screen and (min-width: 767px) {
+    .img-index {
+        width: 100%;
+        margin-top: 10%;
+    }
 }
 
 @media only screen and (min-width: 1183px) {
-  .img-index{
-    width: 100%;
-    margin-top: 7%;
-}
+    .img-index {
+        width: 100%;
+        margin-top: 7%;
+    }
 }
 
 @media only screen and (min-width: 1255px) {
-  .img-index{
-    width: 100%;
-    margin-top: 3%;
-	}
+    .img-index {
+        width: 100%;
+        margin-top: 3%;
+    }
 }
 
-.text-orange{
+@media only screen and (max-width: 800px) {
+    .image-proex-navbar{
+        display: none;
+}
+
+@media only screen and (max-width: 760px) {
+    .image-proex-navbar{
+        display: none;
+        width: 8000px;
+        
+}
+
+
+.text-orange {
     color: orange;
 }
 
-.text-size{
+.text-size {
     font-size: 13px;
 }
 
-
-/* Calendario */
-
-[style*="--aspect-ratio"] > :first-child {
-  width: 80%;
-
+.deanCalendar {
+    margin: 5px;
+    width: 80%;
+    --aspect-ratio: 16/9;
 }
 
-[style*="--aspect-ratio"] > img {  
-  height: auto;
-}
-
-@supports (--custom:property) {
-  [style*="--aspect-ratio"] {
-    position: relative;
-  }
-  
-  [style*="--aspect-ratio"]::before {
-    content: "";
-    display: block;
-    margin-left: 10%;
-  }
-  
-
+.parallax {
+    background-image: url("../img/uesc_entrada.jpeg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
