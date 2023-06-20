@@ -61,11 +61,24 @@ div#tipDiv td div.txt {
     margin-top: 10px;
 }
 
-.editMt-5{  
+.editMt-5 {
     margin-top: 5rem;
 }
 
+.calendar {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    border: 1px solid rgb(119, 119, 119);
+}
 
+
+.map-uesc {
+    width: 89.3vw;
+    height: 35vh;
+    border: none;
+    box-shadow: 2px 2px 2px;
+}
 
 .btn-primary:hover,
 .btn-primary:focus {
@@ -189,8 +202,8 @@ section .section-title {
     color: #2259a6 !important;
 }
 
-.text-proex{
-    color:#2259a6;
+.text-proex {
+    color: #2259a6;
 }
 
 .img-nav {
@@ -224,31 +237,42 @@ a.navbar-brand:hover {
     text-align: center
 }
 
-
-@media (min-width: 992px) {
-    .edit {
-        width: 50% !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .edit {
-        width: 50% !important;
-    }
-}
-
-@media (min-width: 576px) {
-    .edit {
-        width: 50% !important;
-    }
-}
-
 .btn-primary2 {
     background-color: rgb(233, 30, 99);
 }
 
 .img-index {
     width: 100%;
+}
+
+
+.text-orange {
+    color: orange;
+}
+
+.text-size {
+    font-size: 13px;
+}
+
+.deanCalendar {
+    margin: 5px;
+    width: 80%;
+    --aspect-ratio: 16/9;
+}
+
+.parallax {
+    background-image: url("../img/uesc_entrada.jpeg");
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-proex-home{
+    margin-top: 2.5rem;
+    max-width: 100vw;
+    height: auto;
 }
 
 @media only screen and (max-width: 766px) {
@@ -279,38 +303,77 @@ a.navbar-brand:hover {
     }
 }
 
-@media only screen and (max-width: 800px) {
-    .image-proex-navbar{
+@media (min-width: 1px) and (max-width: 280px) {
+    .image-proex-navbar {
         display: none;
-}
+    }
 
-@media only screen and (max-width: 760px) {
-    .image-proex-navbar{
+    .image-proex-navbar2 {
         display: none;
-        width: 8000px;
-        
+    }
+    
+    .img-proex-home{
+        margin-top: 2.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-proex-navbar {
+        display: none;
+        height: 2rem;
+    }
+
+    .image-proex-navbar2 {
+        height: 2rem;
+    }
+
+    .img-proex-home{
+        margin-top: 2.5rem !important;
+    }
 }
 
 
-.text-orange {
-    color: orange;
+@media (min-width: 769px) and (max-width: 1024px) {
+    .image-proex-navbar {
+        display: none;
+        height: 2rem;
+    }
+
+    .image-proex-navbar2 {
+        display: none;
+        height: 2rem;
+    }
+
+    .img-proex-home{
+        margin-top: 2.5rem !important;
+    }
 }
 
-.text-size {
-    font-size: 13px;
+@media (min-width: 1025px){
+    .image-proex-navbar {
+        height: 2rem;
+    }
+
+    .image-proex-navbar2 {
+        display: none;
+        height: 2rem;
+    }
 }
 
-.deanCalendar {
-    margin: 5px;
-    width: 80%;
-    --aspect-ratio: 16/9;
+@media (min-width: 992px) {
+    .edit {
+        width: 50% !important;
+    }
 }
 
-.parallax {
-    background-image: url("../img/uesc_entrada.jpeg");
-    height: 50vh;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (min-width: 768px) {
+    .edit {
+        width: 50% !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .edit {
+        width: 50% !important;
+    }
 }
