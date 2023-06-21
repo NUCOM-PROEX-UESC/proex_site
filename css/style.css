@@ -65,6 +65,11 @@ div#tipDiv td div.txt {
     margin-top: 5rem;
 }
 
+.calendarDiv {
+    position: relative;
+    overflow: hidden;
+}
+
 .calendar {
     width: 80vw;
     height: 90vh;
@@ -254,11 +259,6 @@ a.navbar-brand:hover {
     font-size: 13px;
 }
 
-.deanCalendar {
-    margin: 5px;
-    width: 80%;
-    --aspect-ratio: 16/9;
-}
 
 .parallax {
     background-image: url("../img/uesc_entrada.jpeg");
@@ -269,7 +269,7 @@ a.navbar-brand:hover {
     background-size: cover;
 }
 
-.img-proex-home{
+.img-proex-home {
     margin-top: 2.5rem;
     max-width: 100vw;
     height: auto;
@@ -311,8 +311,8 @@ a.navbar-brand:hover {
     .image-proex-navbar2 {
         display: none;
     }
-    
-    .img-proex-home{
+
+    .img-proex-home {
         margin-top: 2.5rem !important;
     }
 }
@@ -327,7 +327,7 @@ a.navbar-brand:hover {
         height: 2rem;
     }
 
-    .img-proex-home{
+    .img-proex-home {
         margin-top: 2.5rem !important;
     }
 }
@@ -344,12 +344,12 @@ a.navbar-brand:hover {
         height: 2rem;
     }
 
-    .img-proex-home{
+    .img-proex-home {
         margin-top: 2.5rem !important;
     }
 }
 
-@media (min-width: 1025px){
+@media (min-width: 1025px) {
     .image-proex-navbar {
         height: 2rem;
     }
