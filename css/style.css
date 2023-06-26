@@ -203,6 +203,10 @@ section .section-title {
     height: 120px;
 }
 
+.editUPT{
+    width: 500px !important;
+}
+
 .color-sub-and-title {
     color: #2259a6 !important;
 }
@@ -272,6 +276,8 @@ a.navbar-brand:hover {
 .img-proex-home {
     max-width: 100%;
     height: auto;
+
+    margin-top: 3.5rem;
 }
 
 @media only screen and (max-width: 766px) {
@@ -304,57 +310,25 @@ a.navbar-brand:hover {
 
 @media (min-width: 1px) and (max-width: 280px) {
     .image-proex-navbar {
-        display: none;
-    }
-
-    .image-proex-navbar2 {
-        display: none;
-    }
-
-    .img-proex-home {
-        margin-top: 2.5rem !important;
+        height: 2rem;
     }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 281px) and (max-width: 768px) {
     .image-proex-navbar {
-        display: none;
         height: 2rem;
-    }
-
-    .image-proex-navbar2 {
-        height: 2rem;
-    }
-
-    .img-proex-home {
-        margin-top: 2.5rem !important;
     }
 }
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .image-proex-navbar {
-        display: none;
         height: 2rem;
-    }
-
-    .image-proex-navbar2 {
-        display: none;
-        height: 2rem;
-    }
-
-    .img-proex-home {
-        margin-top: 2.5rem !important;
     }
 }
 
 @media (min-width: 1025px) {
     .image-proex-navbar {
-        height: 2rem;
-    }
-
-    .image-proex-navbar2 {
-        display: none;
         height: 2rem;
     }
 }
