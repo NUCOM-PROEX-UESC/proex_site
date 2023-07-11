@@ -1,5 +1,5 @@
 RewriteEngine On
-
+Options -Indexes
 
 <IfModule mod_rewrite.c>
 Options +FollowSymLinks -MultiViews
