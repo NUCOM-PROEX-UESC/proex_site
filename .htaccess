@@ -1,13 +1,11 @@
-RewriteEngine On
-Options -Indexes
-
 <IfModule mod_rewrite.c>
-Options +FollowSymLinks -MultiViews
-RewriteEngine On
-RewriteBase /
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
-RewriteRule ^ %1 [R,L]
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*?)/?$ $1.html [L]
+    Options -Indexes
+    Options +FollowSymLinks -MultiViews
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.html [NC]
+    RewriteRule ^ %1 [R,L]
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^(.*?)/?$ $1.html [L]
 </IfModule>
