@@ -1,223 +1,134 @@
-const noticias = [
+let idNews = 0;
+const news = [
     {
-        titulo: "Título da Notícia 1",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
+        id: idNews,
+        title: "Título da Notícia 3",
+        image: "./img/text-imag.jpg",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
+        date: "00/00/0000"
     },
     {
-        titulo: "Título da Notícia 2",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
+        id: idNews,
+        title: "Título da Notícia 2",
+        image: "./img/uesc_entrada.jpeg",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
+        date: "00/00/0000"
     },
     {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
-    },    {
-        titulo: "Título da Notícia 3",
-        imagem: "./img/text-imag.jpg",
-        resumo: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
-        data: "00/00/0000"
+        id: idNews,
+        title: "Título da Notícia 1",
+        image: "./img/identidadeVisual/capa_manual-06.png",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
+        date: "00/00/0000"
     },
+    {
+        id: idNews,
+        title: "Título da Notícia 1",
+        image: "./img/teste-1.jpg",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
+        date: "00/00/0000"
+    },
+    {
+        id: idNews,
+        title: "Título da Notícia 1",
+        image: "./img/te.jpg",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eveniet laudantium excepturi ad aliquam tempore dignissimos impedit ea facilis cumque, obcaecati autem voluptates labore reprehenderit error fugiat aspernatur pariatur officiis.",
+        date: "00/00/0000"
+    },
+    
 ];
 
-const noticiasPorPagina = 10;
-let paginaAtual = 1;
+function showNews() {
+    const newsContainer = document.querySelector('.noticias-container');
+    newsContainer.innerHTML = '';
 
-function exibirNoticias() {
-    const noticiasContainer = document.querySelector('.noticias-container');
-    noticiasContainer.innerHTML = '';
+    const start = (currentPage - 1) * newsPerPage;
+    const end = start + newsPerPage;
+    const newsPage = news.slice(start, end);
 
-    const inicio = (paginaAtual - 1) * noticiasPorPagina;
-    const fim = inicio + noticiasPorPagina;
-    const noticiasPagina = noticias.slice(inicio, fim);
+    for (let i = 0; i < newsPage.length; i++) {
+        const newNews = newsPage[i];
 
-    for (let i = 0; i < noticiasPagina.length; i++) {
-        const noticia = noticiasPagina[i];
-
-        const divNoticia = document.createElement('div');
-        divNoticia.classList.add('noticia');
-        divNoticia.onclick = function () {
-            window.location.href = 'pagina_noticia.html';
+        const newsDiv = document.createElement('div');
+        newsDiv.classList.add('noticia');
+        newsDiv.id = 'news' + idNews.toString();
+        idNews++;
+        newsDiv.onclick = function () {
+            window.location.href = `noticia.html#${this.id}`;
         };
-
+        
 
         const divImage = document.createElement('div');
         divImage.classList.add('p-3');
 
-        const imagem = document.createElement('img');
-        imagem.src = noticia.imagem;
-        imagem.alt = 'Imagem da Notícia';
-        divImage.appendChild(imagem)
-        divNoticia.appendChild(divImage);
+        const image = document.createElement('img');
+        image.src = newNews.image;
+        image.alt = 'image da Notícia';
+        divImage.appendChild(image)
+        newsDiv.appendChild(divImage);
 
-        const divDescricao = document.createElement('div');
-        divDescricao.classList.add('p-2', 'text-justify');
+        const descriptionDiv = document.createElement('div');
+        descriptionDiv.classList.add('p-2', 'text-justify');
 
-        const titulo = document.createElement('h5');
-        titulo.classList.add('font-weight-bold', 'text-proex');
-        titulo.textContent = noticia.titulo;
-        divDescricao.appendChild(titulo);
+        const title = document.createElement('h5');
+        title.classList.add('font-weight-bold', 'text-proex');
+        title.textContent = newNews.title;
+        descriptionDiv.appendChild(title);
 
-        const resumo = document.createElement('p');
-        resumo.textContent = noticia.resumo;
-        divDescricao.appendChild(resumo);
+        const description = document.createElement('p');
+        description.textContent = newNews.description;
+        descriptionDiv.appendChild(description);
 
-        const data = document.createElement('p');
-        data.textContent = noticia.data;
-        divDescricao.appendChild(data);
+        const date = document.createElement('p');
+        date.textContent = newNews.date;
+        descriptionDiv.appendChild(date);
 
-        divNoticia.appendChild(divDescricao);
+        newsDiv.appendChild(descriptionDiv);
 
-        noticiasContainer.appendChild(divNoticia);
+        newsContainer.appendChild(newsDiv);
     }
 }
 
-function criarPaginacao() {
+const newsPerPage = 10;
+let currentPage = 1;
+
+function createPagination() {
     const pagination = document.querySelector('.pagination');
     pagination.innerHTML = '';
 
-    const numPaginas = Math.ceil(noticias.length / noticiasPorPagina);
+    const numbersPage = Math.ceil(news.length / newsPerPage);
 
-    for (let i = 1; i <= numPaginas; i++) {
-        const linkPagina = document.createElement('a');
-        linkPagina.href = '#';
-        linkPagina.textContent = i;
-        linkPagina.onclick = function () {
-            paginaAtual = i;
-            exibirNoticias();
-            atualizarPaginacao();
+    for (let i = 1; i <= numbersPage; i++) {
+        const pageLink = document.createElement('a');
+        pageLink.href = '#';
+        pageLink.textContent = i;
+        pageLink.onclick = function () {
+            currentPage = i;
+            showNews();
+            updatePagination();
             return false;
         };
 
-        if (i === paginaAtual) {
-            linkPagina.classList.add('current-page');
+        if (i === currentPage) {
+            pageLink.classList.add('current-page');
         }
 
-        pagination.appendChild(linkPagina);
+        pagination.appendChild(pageLink);
     }
 }
 
-function atualizarPaginacao() {
-    const linksPagina = document.querySelectorAll('.pagination a');
-    linksPagina.forEach(function (link) {
+function updatePagination() {
+    const pagesLink = document.querySelectorAll('.pagination a');
+    pagesLink.forEach(function (link) {
         link.classList.remove('current-page');
     });
 
-    const linkAtual = document.querySelector(`.pagination a:nth-child(${paginaAtual})`);
-    linkAtual.classList.add('current-page');
+    const currentLink = document.querySelector(`.pagination a:nth-child(${currentPage})`);
+    currentLink.classList.add('current-page');
 
-    const noticiasContainer = document.querySelector('.return-pagination');
-    noticiasContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const newsContainer = document.querySelector('.return-pagination');
+    newsContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
-exibirNoticias();
-criarPaginacao();
+showNews();
+createPagination();
