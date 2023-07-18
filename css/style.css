@@ -284,6 +284,17 @@ a.navbar-brand:hover {
     text-decoration: none !important;
 }
 
+
+ /* Página com todas as noticias */
+
+.card-noticia{
+    display: ;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
 .noticia {
     display: flex;
     align-items: center;
@@ -294,7 +305,7 @@ a.navbar-brand:hover {
 
 .noticia img {
     width: 90%;
-    height: auto;
+    height: 20vh;
     margin-right: 5%;
     border-radius: 3%;
 }
@@ -337,9 +348,62 @@ a.navbar-brand:hover {
     text-decoration: underline;
 }
 
+@media (min-width:525px) and (max-width: 990px) {
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        height: 30vh;
+        text-align: center;
+    }
+
+    .noticia h5 {
+        text-align: center;
+    }
+}
+
+
+@media (min-width:1px) and (max-width: 525px) {
+    .noticia {
+        flex-direction: column;
+    }
+
+    .noticia img {
+        height: 20vh;
+    }
+
+    .noticia h5 {
+        text-align: center;
+    }
+}
+
+
+
+/* ---------------------------------------------- */
+
+/* Página de notícia específica */
+
+.div-img-news{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 3%
+}
+
+.img-news{
+    width: 100%;
+    height: 100%;
+}
+
+/* ---------------------------------------------- */
+
 /* Card Slider Horizontal */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.title-card-home{
+    padding-block: 7%;
+}
 
 .slider-div {
     display: flex;
@@ -356,7 +420,6 @@ a.navbar-brand:hover {
 .slide-content-slider {
     margin: 0 40px;
     overflow: hidden;
-    border-radius: 25px;
 }
 
 .card-slider {
@@ -390,9 +453,9 @@ a.navbar-brand:hover {
 
 .card-image {
     position: relative;
-    height: 100%;
+    height: 25vh;
     width: 100%;
-    border-radius: 9%;
+    border-radius: 3%;
     background: #FFF;
 }
 
@@ -423,6 +486,8 @@ a.navbar-brand:hover {
 
 .button-slider:hover {
     background: #286AC7;
+    color: white;
+    text-decoration: none;
 }
 
 .swiper-navBtn {
