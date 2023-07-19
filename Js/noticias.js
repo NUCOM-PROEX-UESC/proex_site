@@ -2,10 +2,27 @@ let idNews = 0;
 const news = [
     {
         id: idNews,
-        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais asdasdasd asdasdasd asdasd adasd asd",
-        image: "./img/imagens-noticias/Parceria Uesc e Ufsb_secundaria.jpg",
-        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o papel das duas Universidades na proposição de soluções aos problemas locais vislumbrando o desenvolvimento regional.",
-        date: "20/07/2023"
+        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais",
+        image: "./img/imagens-noticias/parceria_uesc_e_ufsb_secundaria.jpg",
+        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
+        date: "20/07/2023",
+        alt: ""
+    },
+    {
+        id: idNews,
+        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais",
+        image: "./img/teste-1.jpg",
+        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
+        date: "20/07/2023",
+        alt: ""
+    },
+    {
+        id: idNews,
+        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais",
+        image: "./img/teste-2.jpg",
+        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
+        date: "20/07/2023",
+        alt: ""
     }
 ];
 
@@ -36,7 +53,7 @@ function showNews() {
     const end = start + newsPerPage;
     const newsPage = news.slice(start, end);
 
-    for (let i = 0; i < newsPage.length; i++) {
+    for (let i = newsPage.length - 1; i >= 0; i--) {
         const newNews = newsPage[i];
 
         const newsDiv = document.createElement('div');
@@ -49,16 +66,16 @@ function showNews() {
 
 
         const divImage = document.createElement('div');
-        divImage.classList.add('p-3', 'card-noticia');
+        divImage.classList.add('div-noticia-image');
 
         const image = document.createElement('img');
         image.src = newNews.image;
-        image.alt = 'image da Notícia';
+        image.alt = newNews.alt;
         divImage.appendChild(image)
         newsDiv.appendChild(divImage);
 
         const descriptionDiv = document.createElement('div');
-        descriptionDiv.classList.add('p-2', 'text-justify');
+        descriptionDiv.classList.add('p-2', 'text-justify', 'resumo-descricao');
 
         const title = document.createElement('h5');
         title.classList.add('font-weight-bold', 'text-proex');
@@ -70,6 +87,7 @@ function showNews() {
         descriptionDiv.appendChild(description);
 
         const date = document.createElement('p');
+        date.classList.add('py-2', 'text-secondary');
         date.textContent = newNews.date;
         descriptionDiv.appendChild(date);
 
@@ -79,31 +97,6 @@ function showNews() {
     }
 }
 
-function ocultarElementosPorID() {
-    var url = window.location.href;
-    var id = url.substring(url.lastIndexOf("#") + 1);
-
-    var section = document.getElementById("newsSection");
-
-    var elementos = section.getElementsByTagName("*");
-
-    for (var i = 0; i < elementos.length; i++) {
-        var elemento = elementos[i];
-
-        if (elemento.id !== id && !elemento.contains(document.getElementById(id))) {
-            elemento.style.display = "none";
-        }
-    }
-
-    var elementoEspecifico = document.getElementById(id);
-    if (elementoEspecifico) {
-        elementoEspecifico.style.display = "block";
-        var filhos = elementoEspecifico.getElementsByTagName("*");
-        for (var j = 0; j < filhos.length; j++) {
-            filhos[j].style.display = "block";
-        }
-    }
-}
 
 const newsPerPage = 10;
 let currentPage = 1;

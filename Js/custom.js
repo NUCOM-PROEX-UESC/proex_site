@@ -1,16 +1,14 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $window = $(window);
-    //Captura cada elemento section com o data-type "background"
-    $('section[data-type="background"]').each(function(){
-        var $scroll = $(this);   
-            //Captura o evento scroll do navegador e modifica o backgroundPosition de acordo com seu deslocamento.            
-            $(window).scroll(function() {
-                var yPos = -($window.scrollTop() / $scroll.data('speed')); 
-                var coords = '50% '+ yPos + 'px';
-                $scroll.css({ backgroundPosition: coords });    
-            });
-   });  
-}); 
+    $('section[data-type="background"]').each(function () {
+        var $scroll = $(this);
+        $(window).scroll(function () {
+            var yPos = -($window.scrollTop() / $scroll.data('speed'));
+            var coords = '50% ' + yPos + 'px';
+            $scroll.css({ backgroundPosition: coords });
+        });
+    });
+});
 
 var swiper = new Swiper(".slide-content-slider", {
     slidesPerView: 3,
@@ -20,16 +18,16 @@ var swiper = new Swiper(".slide-content-slider", {
     fade: 'true',
     grabCursor: 'true',
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      dynamicBullets: true,
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
 
-    breakpoints:{
+    breakpoints: {
         0: {
             slidesPerView: 1,
         },
@@ -40,4 +38,4 @@ var swiper = new Swiper(".slide-content-slider", {
             slidesPerView: 3,
         },
     },
-  });
+});
