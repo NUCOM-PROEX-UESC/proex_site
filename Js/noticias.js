@@ -10,21 +10,83 @@ const news = [
     },
     {
         id: idNews,
-        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais",
-        image: "./img/teste-1.jpg",
-        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
-        date: "20/07/2023",
+        title: "UESC realiza Congresso Internacional sobre Educação Empreendedora e Cidadania",
+        image: "./img/imagens-noticias/noticia_congresso_secundaria.png",
+        description: "UESC organiza o III Congresso Internacional de Educação Empreendedora e Cidadania com o tema: Construindo pontes.Criando cultura colaborativa.",
+        date: "20/06/2023",
         alt: ""
     },
     {
         id: idNews,
-        title: "Pró-Reitores de Extensão da UESC e UFSB discutem futuras parcerias institucionais",
-        image: "./img/teste-2.jpg",
-        description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
-        date: "20/07/2023",
+        title: "Uesc divulga o resultado do edital PROBEX",
+        image: "./img/imagens-noticias/noticia_divulgacao_edital_probex_073_secundaria.png",
+        description: "Uesc publica resultados do Edital 073/2023 para abertura das inscrições do edital PROBEX",
+        date: "19/07/2023",
         alt: ""
-    }
+    },
 ];
+
+
+function createNewsElement(news) {
+    const newsDiv = document.createElement('div');
+    newsDiv.classList.add('noticia');
+    newsDiv.id = 'news' + idNews.toString();
+    idNews++;
+    newsDiv.onclick = function () {
+        window.location.href = `noticia.html#${this.id}`;
+    };
+
+    const divImage = document.createElement('div');
+    divImage.classList.add('div-noticia-image');
+
+    const image = document.createElement('img');
+    image.src = news.image;
+    image.alt = news.alt;
+    divImage.appendChild(image);
+    newsDiv.appendChild(divImage);
+
+    const descriptionDiv = document.createElement('div');
+    descriptionDiv.classList.add('p-2', 'resumo-descricao');
+
+    const title = document.createElement('h5');
+    title.classList.add('font-weight-bold', 'text-proex');
+    title.textContent = news.title;
+    descriptionDiv.appendChild(title);
+
+    const description = document.createElement('p');
+    description.textContent = news.description;
+    descriptionDiv.appendChild(description);
+
+    const date = document.createElement('p');
+    date.classList.add('py-2', 'text-secondary');
+    date.textContent = news.date;
+    descriptionDiv.appendChild(date);
+
+    newsDiv.appendChild(descriptionDiv);
+
+    return newsDiv;
+}
+
+function showNews() {
+    const newsContainer = document.querySelector('.noticias-container');
+    newsContainer.innerHTML = '';
+
+    const start = (currentPage - 1) * newsPerPage;
+    const end = start + newsPerPage;
+    const newsPage = news.slice(start, end);
+
+    const newsElements = [];
+
+    for (let i = 0; i < newsPage.length; i++) {
+        const newNews = newsPage[i];
+        const newsElement = createNewsElement(newNews);
+        newsElements.push(newsElement);
+    }
+
+    for (const element of newsElements) {
+        newsContainer.appendChild(element);
+    }
+}
 
 
 function showSpecifNews() {
@@ -43,58 +105,6 @@ function showSpecifNews() {
     }
 
 
-}
-
-function showNews() {
-    const newsContainer = document.querySelector('.noticias-container');
-    newsContainer.innerHTML = '';
-
-    const start = (currentPage - 1) * newsPerPage;
-    const end = start + newsPerPage;
-    const newsPage = news.slice(start, end);
-
-    for (let i = newsPage.length - 1; i >= 0; i--) {
-        const newNews = newsPage[i];
-
-        const newsDiv = document.createElement('div');
-        newsDiv.classList.add('noticia');
-        newsDiv.id = 'news' + idNews.toString();
-        idNews++;
-        newsDiv.onclick = function () {
-            window.location.href = `noticia.html#${this.id}`;
-        };
-
-
-        const divImage = document.createElement('div');
-        divImage.classList.add('div-noticia-image');
-
-        const image = document.createElement('img');
-        image.src = newNews.image;
-        image.alt = newNews.alt;
-        divImage.appendChild(image)
-        newsDiv.appendChild(divImage);
-
-        const descriptionDiv = document.createElement('div');
-        descriptionDiv.classList.add('p-2', 'text-justify', 'resumo-descricao');
-
-        const title = document.createElement('h5');
-        title.classList.add('font-weight-bold', 'text-proex');
-        title.textContent = newNews.title;
-        descriptionDiv.appendChild(title);
-
-        const description = document.createElement('p');
-        description.textContent = newNews.description;
-        descriptionDiv.appendChild(description);
-
-        const date = document.createElement('p');
-        date.classList.add('py-2', 'text-secondary');
-        date.textContent = newNews.date;
-        descriptionDiv.appendChild(date);
-
-        newsDiv.appendChild(descriptionDiv);
-
-        newsContainer.appendChild(newsDiv);
-    }
 }
 
 
