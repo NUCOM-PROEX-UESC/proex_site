@@ -332,6 +332,8 @@ a.navbar-brand:hover {
 
 .resumo-descricao{
     margin-inline-end: 2%;
+    width: 130%;
+    justify-content: center;
 }
 
 .pagination {
