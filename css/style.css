@@ -110,13 +110,13 @@ section .section-title {
     background: #ffffff;
 }
 
-.hover-team{
+.hover-team {
     margin-inline: 10%;
     background-color: #fff;
     transition: background-color 0.5s ease;
 }
 
-.hover-team:hover{
+.hover-team:hover {
     background-color: rgba(34, 89, 166, 0.2);
 }
 
@@ -295,9 +295,9 @@ a.navbar-brand:hover {
 }
 
 
- /* Página com todas as noticias */
+/* Página com todas as noticias */
 
-.div-noticia-image{
+.div-noticia-image {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -330,10 +330,11 @@ a.navbar-brand:hover {
     background-color: rgba(34, 89, 166, 0.2);
 }
 
-.resumo-descricao{
+.resumo-descricao {
     margin-inline-end: 2%;
     width: 130%;
     justify-content: center;
+    overflow: hidden;
 }
 
 .pagination {
@@ -359,6 +360,12 @@ a.navbar-brand:hover {
 .pagination .current-page {
     color: #000;
     text-decoration: underline;
+}
+
+@media (min-width:525px) and (max-width:1024.99px){
+    .resumo-descricao{
+        width: 60%;
+    }
 }
 
 
@@ -398,8 +405,11 @@ a.navbar-brand:hover {
         font-size: 1rem;
         text-align: center;
     }
+
     .resumo-descricao {
         font-size: .9rem !important;
+        width: 80%;
+        text-align: center;
     }
 }
 
@@ -409,13 +419,13 @@ a.navbar-brand:hover {
 
 /* Página de notícia específica */
 
-.div-img-news{
+.div-img-news {
     width: 100%;
     height: 100%;
     margin-bottom: 3%
 }
 
-.img-news{
+.img-news {
     width: 100%;
     height: 100%;
 }
@@ -426,7 +436,9 @@ a.navbar-brand:hover {
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-.title-card-home{
+.news-card-home {
+    position: relative;
+    height: 19rem;
     padding-block: 7%;
 }
 
@@ -447,15 +459,18 @@ a.navbar-brand:hover {
     overflow: hidden;
 }
 
-.card-slider {
-    border-radius: 25px;
+.card, .card-slider {
+    border-radius: 11px;
     background-color: #FFF;
+    overflow: hidden;
+    justify-content: space-between; 
 }
 
 .image-content,
 .card-content {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     align-items: center;
     padding: 10px 14px;
 }
@@ -478,7 +493,7 @@ a.navbar-brand:hover {
 
 .card-image {
     position: relative;
-    height: 25vh;
+    height: auto;
     width: 100%;
     border-radius: 3%;
     background: #FFF;
@@ -495,6 +510,7 @@ a.navbar-brand:hover {
     font-size: 14px;
     color: #707070;
     text-align: center;
+    flex-grow: 1;
 }
 
 .button-slider {
@@ -543,6 +559,9 @@ a.navbar-brand:hover {
     opacity: 1;
 }
 
+
+/* -------------------------------------------- */
+
 @media screen and (max-width: 768px) {
     .slide-content {
         margin: 0 10px;
@@ -553,7 +572,16 @@ a.navbar-brand:hover {
     }
 }
 
-/* -------------------------------------------- */
+
+@media (max-width: 1199.99px) {
+    .description{
+        font-size: 12px;
+    }
+    .name{
+        font-size: 17px;
+    }
+}
+
 
 @media only screen and (max-width: 766px) {
     .img-index {
