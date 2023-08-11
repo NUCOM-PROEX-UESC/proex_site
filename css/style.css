@@ -362,8 +362,8 @@ a.navbar-brand:hover {
     text-decoration: underline;
 }
 
-@media (min-width:525px) and (max-width:1024.99px){
-    .resumo-descricao{
+@media (min-width:525px) and (max-width:1024.99px) {
+    .resumo-descricao {
         width: 60%;
     }
 }
@@ -459,11 +459,12 @@ a.navbar-brand:hover {
     overflow: hidden;
 }
 
-.card, .card-slider {
+.card,
+.card-slider {
     border-radius: 11px;
     background-color: #FFF;
     overflow: hidden;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .image-content,
@@ -525,6 +526,26 @@ a.navbar-brand:hover {
     transition: all 0.3s ease;
 }
 
+.carousel-control-prev-img {
+    width: 1.5rem;
+    margin-right: 8.8rem ;
+    transition: background-color .3s ease;
+}
+
+.carousel-control-prev-img:hover {
+    background-color: rgba(40, 106, 199, .3);
+}
+
+.carousel-control-next-img {
+    width: 1.5rem;
+    margin-left: 8.8rem ;
+    transition: background-color .3s ease;
+}
+
+.carousel-control-next-img:hover {
+    background-color: rgba(40, 106, 199, .3);
+}
+
 .button-slider:hover {
     background: #286AC7;
     color: white;
@@ -532,12 +553,8 @@ a.navbar-brand:hover {
 }
 
 .swiper-navBtn {
-    color: #6E93f7;
+    color: #0051c3 !important;
     transition: color 0.3s ease;
-}
-
-.swiper-navBtn:hover {
-    color: #286AC7;
 }
 
 .swiper-navBtn::before,
@@ -545,14 +562,6 @@ a.navbar-brand:hover {
     font-size: 35px;
 }
 
-.swiper-button-next {
-    right: 0;
-    padding-left: 1rem;
-}
-
-.swiper-button-prev {
-    padding-right: 1rem;
-}
 
 .swiper-pagination-bullet {
     background-color: #286AC7;
@@ -574,10 +583,11 @@ a.navbar-brand:hover {
 
 
 @media (max-width: 1199.99px) {
-    .description{
+    .description {
         font-size: 12px;
     }
-    .name{
+
+    .name {
         font-size: 17px;
     }
 }
