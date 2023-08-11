@@ -14,7 +14,7 @@ const news = [
         id: 1,
         title: "UESC realiza Congresso Internacional sobre Educação Empreendedora e Cidadania",
         image: "./img/imagens-noticias/noticia_congresso_secundaria.png",
-        description: "UESC organiza o III Congresso Internacional de Educação Empreendedora e Cidadania com o tema: Construindo pontes.Criando cultura colaborativa.",
+        description: "UESC organiza o III Congresso Internacional de Educação Empreendedora e Cidadania com o tema: Construindo pontes. Criando cultura colaborativa.",
         date: "20/06/2023",
         alt: ""
     },
@@ -28,12 +28,20 @@ const news = [
     },
     {
         id: 3,
-        title: "Uesc divulga o resultado do edital PROBEX",
+        title: "BORÉPETEÍ.UNO: A extensão universitária na cultura regional",
         image: "./img/teste-1.jpg",
-        description: "Uesc publica resultados do Edital 073/2023 para abertura das inscrições do edital PROBEX",
-        date: "19/07/2023",
+        description: "Novo espetáculo do Teatro Popular de Ilhéus é uma parceria com a Universidade Estadual de Santa Cruz, a Pró-Reitoria de Extensão-Proex, o Observatório Astronômico e o Núcleo de Artes da UESC",
+        date: "21/06/2023",
         alt: ""
     },
+    {
+        id: 4,
+        title: "Proex-UESC participa da itinerância FAEG-SUL em Itacaré",
+        image: "./img/teste-1.jpg",
+        description: "Proex e Programa Agir participam do encontro cultural promovido por FAEG-SUL no Centro Cultural Porto de Trás de Itacaré",
+        date: "21/06/2023",
+        alt: ""
+    }
 ];
 
 
