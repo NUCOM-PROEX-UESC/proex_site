@@ -81,7 +81,7 @@ div#tipDiv td div.txt {
 .map-uesc {
     width: 89.3vw;
     height: 35vh;
-    border: none;
+    border-radius: 5px;
     box-shadow: 2px 2px 2px;
 }
 
@@ -113,7 +113,7 @@ section .section-title {
 .hover-team {
     margin-inline: 10%;
     background-color: #fff;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.3s ease;
 }
 
 .hover-team:hover {
