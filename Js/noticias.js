@@ -8,8 +8,8 @@ const news = [
         image: "./img/imagens-noticias/parceria_uesc_e_ufsb_secundaria.jpg",
         description: "Os pró-reitores de extensão da UESC e da UFSB reuniram-se para tratar de futuras parcerias institucionais colaborativas de promoção de atividades extensionistas, em que foram discutidos o...",
         date: "20/07/2023",
-        alt: ""
-    },
+        alt: "imagem pró-reitores de extensão"
+    }, 
     {
         id: 1,
         title: "UESC realiza Congresso Internacional sobre Educação Empreendedora e Cidadania",
@@ -36,6 +36,14 @@ const news = [
     },
     {
         id: 4,
+        title: "Proex-UESC participa da itinerância FAEG-SUL em Itacaré",
+        image: "./img/teste-1.jpg",
+        description: "Proex e Programa Agir participam do encontro cultural promovido por FAEG-SUL no Centro Cultural Porto de Trás de Itacaré",
+        date: "21/06/2023",
+        alt: ""
+    },
+    {
+        id: 5,
         title: "Proex-UESC participa da itinerância FAEG-SUL em Itacaré",
         image: "./img/teste-1.jpg",
         description: "Proex e Programa Agir participam do encontro cultural promovido por FAEG-SUL no Centro Cultural Porto de Trás de Itacaré",
